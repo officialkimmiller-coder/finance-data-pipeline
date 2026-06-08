@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-data-pipeline"
+version = "0.1.0"
+description = "CLI tool to clean financial price data, compute basic indicators, and generate Markdown reports."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["finance", "automation", "cli", "education", "open-source"]
+
+[project.scripts]
+finance-pipeline = "finance_data_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
